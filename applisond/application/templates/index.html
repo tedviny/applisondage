@@ -1,0 +1,74 @@
+            {% extends "base.html" %}
+            {% block content %}
+            {% block title %}
+            <title>Accueil</title>
+            {% endblock %}
+                     <div class="banner p-5">
+                <div class="p-5 mt-5">
+                <h1 class="text-center fw-bold mt-5 text-secondary">Bienvenu sur l'application d'analyse de sondage</h1>
+                <p class="text-center mt-5 reveal">Ensemble de microservices réalisé par les étudiants dans le cadre d'un projet académique qui consiste à visualiser les résultats d'une enquete</p>
+              <div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </section>
+            <!--Fin Navbar -->
+
+        <!--Fin Header -->
+
+        <!-- Premiere section  -->
+        <section id="apropos">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div id="card-1" class="p-3">
+                    <p class="text-center reveal">L'objectif de ce projet est de développer une interface ou un outil de visualisation numérique présentant/affichant sur écran le résultat d'une enquête approfondie sur les habitudes de consommation/d'utilisation des utilisateurs d'applications mobiles sur la 4G et la 5G.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5"></div>
+          <div class="p-5">
+            <div class="info">
+              <div class="p-2">
+          <div class="container">
+            <div class="row">
+                      <div class="col-md-6">
+                        <div class="content p-3">
+                        <h5 class="p-1 fs-6 fw-bolder text-info">Utilisation de l'application</h5>
+                        <p class="text-center fs-7">Une fois l'enquete, les réponses doivent etre récupéré dans un fichier csv, ensuite les l'utilisateur se connecte après avoir crée un compte, place le fichier csv dans le formulaire, en précisant la variable des données du sondage à visualiser. L'application affiche les graphes des données.</p>
+
+                          <div>
+                            <h5 class="p-1 fs-6 fw-bolder text-info">Consignes</h5>
+                            <p class="text-center fs-7">Pour respecter l'alogorithme mis en place pour traiter les données de l'application, vos données doivent etre classées d'une manière particulière. Un modèle de fichier csv est téléchargeable comme exemple.</p>
+                              </div>
+                              </div>
+                            <div class="p-3">
+                                {% load static %}
+                              <a class="btn bg-success p-2 btn-ep" href="{% static 'csv/projet_rm.csv' %}">Télécharger modèle <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="p-3">
+                            {% load static %}
+                          <a><img src="{% static 'images/graphs.png' %}" width="50%" alt="Image de graphique"></a>
+                        </div>
+                      </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="p-5"></div>
+        </section>
+        <!-- Modal connexion -->
+
+        <!-- Fin Modal connexion -->
+            {% endblock %}

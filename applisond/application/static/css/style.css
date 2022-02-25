@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eff8f9;
+  font-family: "Lora", serif;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(0.95, 0.02, 0, 0.97);
+}
+
+.myheader {
+  background: linear-gradient(#cbe7f0, #eff8f9);
+}
+.myheader h1 {
+  font-family: "Great Vibes", cursive;
+}
+.myheader .mybutton .btn {
+  width: 180px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 13px;
+}
+
+.banner {
+  height: 500px;
+}
+
+.btn-form-file {
+  padding: 5px 5px 5px;
+}
+
+#apropos #card-1 {
+  border-radius: 5px;
+}
+#apropos .info {
+  background-color: #caeee5 !important;
+  border-radius: 8px !important;
+}
+#apropos .info p {
+  text-align: justify !important;
+}
+#apropos .btn-ep {
+  width: 180px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 13px;
+}
+
+.btn-con-user {
+  border-radius: 20px;
+}
+
+.myfooter {
+  background-color: #78a6ae;
+  position: absolute !important;
+  left: 0;
+  right: 0;
+}
+.myfooter hr {
+  width: 75%;
+}
+.myfooter #subfooter {
+  background-color: #3f7882;
+  margin-top: 30px !important;
+  position: relative !important;
+}
+.myfooter #mysubfooter h6 {
+  font-family: "Great Vibes", cursive;
+}
+.myfooter #mysubfooter p {
+  padding: 4px 4px 4px;
+  font-size: 10px;
+}
+.myfooter #mysubfooter1 h5 {
+  font-size: 13px;
+}
+.myfooter #mysubfooter1 a {
+  text-decoration: none;
+  font-size: 12px;
+}
+.myfooter #mysubfooter1 #footer_logo img {
+  width: 40%;
+  border-radius: 85px;
+}
+
+.footerlign {
+  margin-left: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */

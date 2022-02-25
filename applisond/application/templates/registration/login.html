@@ -1,0 +1,52 @@
+        {% extends "base.html" %}
+
+        {% block content %}
+        {% block title %}
+        <title>Connexion</title>
+        {% endblock %}
+        <section class="p-5 mt-5">
+          <div class="p-5 mt-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="p-2">
+                      <h5 class="text-center p-2">Connexion</h5>
+                        <div class="pt-2">
+                            <hr>
+                        </div>
+                        <div class="p-3"></div>
+
+                        <!--
+                      <form>
+                   <div class="card p-2">
+                         <input class="form-control" type="text" placeholder="login">
+                         <input class="form-control" type="text" placeholder="password">
+                       -->
+
+                        <form action="." method="post">
+                            <div class="p-2">
+                        {{ form.as_table }}
+                            </div>
+                            <div class="p-3">
+                          <button class="btn btn-info text-light btn-con-user form-control" type="submit" value="Log in">Connexion</button>
+                          </div>
+                        {% csrf_token %}
+                        </form>
+                         <div class="pt-2">
+                            <hr>
+                        </div>
+                        <div class="p-3"></div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+          </div>
+          <div class="p-5"></div>
+          <div class="p-5"></div>
+        </section>
+        {% endblock %}

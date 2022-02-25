@@ -1,0 +1,71 @@
+        {% extends "base.html" %}
+        {% block content %}
+        <!-- Premiere section  -->
+
+        <section class="p-5 mt-5">
+          <div class="p-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="p-2">
+                      <h6 class="text-center p-2">Choisir le fichier</h6>
+                      <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="card p-2">
+                          <div class="card">
+                        <input class="ms-auto fs-6" type="file" name="document" id="document" required="required">
+                            <div class="p-2 ms-auto">
+                            <input type="text" name="attributeid" id="attributeid" required="required" placeholder="Attribute ID">
+                                </div>
+                        </div>
+                        <div class="p-1 ms-auto">
+                          <button class="btn btn-info text-light" type="submit">Valider</button>
+                          </div>
+                        </div>
+                        
+                        </form>
+                      </form>
+                  </div>
+                    {% block messages %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    <p class="text-danger text-center">{{ message }}</p>
+                    {% endfor %}
+                    {% endif %}
+                    {% endblock %}
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+
+          <div class="p-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 p-2">
+                    <div class="row">
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-6">
+                      <div class="card p-5">
+                          <h6 class="text-center">Graphe</h6>
+                          <div class="p-5">
+                          <canvas id="graph-1"></canvas>
+                          </div>
+                      </div>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                    <div>
+                    </div>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        {% endblock %}
